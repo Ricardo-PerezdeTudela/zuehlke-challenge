@@ -1,0 +1,331 @@
+‘WHERE AM I?’
+
+‘What?’... ‘W… where am I?’
+
+You open your eyes, but there’s nothing but darkness surrounding you. You feel a gentle rocking, and the distant sound of waves reaches your ears
+
+‘Am... am I on a ship?‘
+
+Suddenly, a pinching pain shoots through your wrist, and you instinctively slap the painful spot
+
+‘Ouch, that hurts even more!‘
+
+You carefully probe the area and discover a small computer strapped to your wrist. You must have pressed a button, because suddenly there’s light coming from the display. Random characters flash up
+
+k2`Jza7,JLzBU}bz'S#62yD[r8!)#6<c
+
+Oh no, you must have damaged the computer when you hit your wrist. As you touch the display, the numbers stop and a message appears:
+
+‘ERROR. WRONG SEQUENCE SELECTED’
+
+You vaguely remember someone once telling you that those small computers go into safety mode if struck by something
+
+To unlock them, you need to find the longest repeating character sequence. But how?
+
+‘There must be another way to get that thing to work,’
+
+you think, as you press every button you can find. Nothing
+
+‘DAMMIT!’
+
+you shout, hitting the computer again. Suddenly the room is illuminated by flashing numbers and characters. You can see that you’re on a ship. It must be the captain’s cabin. There’s a huge wooden desk at the back of the room and a small bed to your right.
+
+Several maps lie scattered across the floor. On the desk, you see a candle, some blank sheets of paper, an empty bottle of rum and... Is that a pen?
+
+‘That’s it!’
+
+you think, as you get up and walk over to the desk. You remove the computer from your wrist and place it on the desk, projecting the numbers onto the wall.
+
+‘Now that I see all of them, I should be able to find the sequence,’
+
+you think, as you get to work.
+
+TASK
+
+Find the longest repeating substring in
+
+1: characters dataset
+
+--------------------------------------------
+
+‘INITIALISING… COMPUTER UNLOCKED.’
+
+‘Finally!’ you think, as the computer reboots.
+
+‘WELCOME!’
+
+Different symbols appear on the screen and you see ‘M.aps, W.iki, P.jector, P.env’. In the upper right-hand corner, the time and date are displayed: 11:59 pm, TUESDAY, 30 NOVEMBER 1717.
+
+‘This must be a mistake!’ you think.
+
+You’re absolutely sure that yesterday was the… the… what day was it again?
+
+You try to recall what happened yesterday, but there’s nothing – just a gap in your memory.
+
+You try to think of the last thing you can remember. ‘I was at my sister’s birthday party. That must have been a Sunday. Yes, it was a Sunday. Sunday, 28 November 2021.’
+
+You remember being there and eating dinner when, ‘Yes, that’s it, my boss called. There seemed to be a problem with aBBi.
+
+You also remember leaving the party and rushing to work and then… blackout.
+
+‘Ok, but that still doesn’t explain how I ended up almost 400 years in the past with that thing strapped to my wrist.’
+
+You continue to explore the computer’s different functions. M.aps seems to be a navigation app, but it must be malfunctioning. According to your location, you’re still in your office.
+
+‘Pretty useless,’ you think.
+
+W.iki appears to be some kind of library. ‘At least it has an index and search function. Could be of use…’
+
+As you click on P.jector, the room is illuminated once again.
+
+‘Aaalright, so that’s the projector,’ you think, as you close the app.
+
+You open P.env.
+
+‘WELCOME TO P.ENV, PERFECT PROBLEM-SOLVING SINCE 1922. GIVE US THE CODE, AND WE’LL DO THE REST.’
+
+‘That would have come in handy earlier!’ you think. You put the computer back on your wrist and continue exploring the captain’s cabin.
+
+On the other side of the desk, you see a heavy door. You cross the room and try to open it. It doesn’t budge an inch.
+
+You look a little closer and find an inscription.
+
+‘To open this door, you must follow the path of Vigenère.’
+
+Right below it is a longer text that doesn’t make any sense to you.
+
+It doesn’t seem to be another language, as there aren’t any spaces and there’s no linguistic order to it.
+
+‘And what could the path of Vigenère be?’ you ask yourself.
+
+You open W.iki on your computer and search for Vigenère. It shows you the following article:
+
+The Vigenère cipher is a method of encrypting alphabetic text by using the letters of a keyword. First described by Giovan Battista Bellaso in 1553, the cipher is easy to understand and implement.
+
+If the letters A-Z are taken to be the numbers 0-25, and addition is performed modulo 26, Vigenère encryption E using the key K can be written as C_i=E_K (M_i )=(M_i+K_i )mod 26 in which M=M_1…M_n is the Message, C=C_1…C_n is the ciphertext and K=K_1… K_n is the key obtained by repeating the keyword m times in which m is the keyword length.
+
+It resisted all attempts to break it until three centuries later, when Friedrich Kasiski published a general method of deciphering.
+
+‘If it can be broken, I might have a chance of using the P.env on the computer,’ you think.
+
+You open the article on the wiki and look for any clues on how to break it.
+
+With the help of P.env, P.jector and the pen, you get to work again.
+
+TASK
+
+The provided input file crypto.txt contains the door inscription. Find and enter the keyword that was used to encrypt the text.
+
+1: crypto dataset
+
+--------------------------------------------
+
+You open the door and the cold sea air strikes your face. It’s a clear night and you can see millions and millions of stars in the sky.
+
+The ship rocks gently to the rhythm of the waves. The deck is empty and all is quiet. You step through the door, creep up to the railing and look overboard.
+
+The sea is calm, the anchor lowered. You see light shining through the porthole in the ship’s hull. As you move further towards the bow, you stumble across a rope and fall onto the deck.
+
+‘Dammit… !’ You swear, holding your knee in pain.
+
+Suddenly you hear heavy footsteps coming towards you.
+
+A voice shouts ‘Who’s there?!’. ‘Show ye face, landlubber!’
+
+You hear him pulling his sabre and coming in your direction. You look around in panic.
+
+‘There must be somewhere to hide. There!’
+
+You see a hatch a yard to your left and start crawling towards it. You just manage to disappear into it before the pirate reaches where you were standing just a moment ago. You hold your breath and wait.
+
+Finally, after what seems like an eternity, you hear him muttering something about those damn rats as he walks off and the sound of his footsteps fades. You exhale, relieved.
+
+‘That was close!’
+
+As you turn around to check where you are, you find yourself staring into the cold, dark eyes of ten fierce-looking pirates.
+
+‘Well, well, well, what do we have ‘ere?’ says one of the pirates.
+
+‘Seems ta be that landlubber that old Billy was lookin’ for,’
+
+one of the others answers.
+
+‘Should I stab him with me cutlass? He’d make fine shark bait, aye boys?’
+
+You hear the pirates laugh – a laugh of approval.
+
+You think about how you could escape from this unfortunate situation – and you suddenly have an idea.
+
+‘D… don’t hurt me! I…’
+
+You look around, searching for something, anything that could save your life.
+
+‘I... I can help you escape!’
+
+Everyone becomes silent. The pirates stare at you with grim eyes. Then, suddenly, they burst out laughing.
+
+‘BWAHAHAHAAHAH, did ye hear that boys? That landlubber says he can help us escape! And how ye goin’ ta do that? Do ye have keys hidden in ye bum?’
+
+You laugh nervously, already feeling completely done for in this hopeless situation.
+
+‘What’s goin’ on here?!’
+
+You hear footsteps coming down the corridor. They stop at the cell door. The pirates have all gone silent.
+
+‘What’s so funny, ye lazy people?’
+
+She looks around, staring at the inmates.
+
+‘Ye see, boss, this landlubber here reckons he can help us escape,’
+
+says the loud-mouthed one from before, pushing you towards the cell door.
+
+‘Is that so?’
+
+she replies smiling. Suddenly she grabs you by the collar and pulls you to the bars.
+
+Ye think you’re a smart one, aye?’ You gulp heavily and nod. ‘Then prove it!’ she says, letting go of you.
+
+‘This list contains all the pirates on this ship and their salary. If ye can tell me who’s the boss, ye shall go free. But if ye fail, ye walk the plank.’
+
+Since you don’t see any other option, you agree.
+
+‘Alrighty then, it’s a deal! But beware: our coin master is a little forgetful, so the salary could have been disbursed in more than one payment, hehehe’.
+
+TASK
+
+the files names.txt and salary.txt contain the name and salary of every pirate on the ship. Find out the name of the boss.
+
+1: salary dataset
+
+2: names dataset
+
+--------------------------------------------
+
+‘Hmpf, so ye shall walk free! But ye leave this ship when we reach Nassau, or I shall cut ye ta pieces!’
+
+You nod and run down the hallway, leaving the pirates on their own. With the pirates out of sight, you stop and catch your breath.
+
+‘Phew, I got lucky again!’ you think to yourself. Now I need to get the hell outta here!’
+
+You keep following the corridor until you reach a staircase leading deeper into the hull.
+
+‘I guess it’s either down here or back to those sword-wielding pirates.’
+
+You shrug your shoulders, grab a nearby torch and face the darkness. The light of your torch doesn’t reveal much of your surroundings, but you can make out some cannons and lots of barrels.
+
+You make your way across the room, being careful not to stumble over the ropes and the scurrying rats.
+
+As you walk further, you suddenly hear a rattling sound and the ship starts to jolt from side to side. You wobble a little, but manage to stay on your feet.
+
+You hear waves crashing against the hull as the ship picks up speed.
+
+‘Looks like we’re on our way to Nassau,’ you think.
+
+‘If I can find out where we are and how fast we’re going, I should be able to calculate exactly when I can leave this bloody ship using my... oh no, where’s my computer?!’
+
+You remember that you left it back on the desk at the captain’s cabin
+
+‘I must have forgotten to put it back on my wrist after decoding Vigenère! Damn!’
+
+Rushing down the corridor and through doors, you somehow make it to the stern without being seen.
+
+‘The captain’s cabin must be on the floor above, if I remember correctly.’
+
+There’s a ladder in front of you. You climb up, open the hatch carefully and peer out over the deck. Everybody seems to be busy and the sun hasn’t fully risen yet, so you should be able to slip past unseen. You take a deep breath and sneak to the captain’s cabin. The door is slightly ajar.
+
+You enter the cabin and head straight over to the desk where you think you left your computer.
+
+‘Where is it?’ you think, rummaging through the paper. ‘Ah, there it is.’
+
+You put the computer back on your wrist, turn around and… freeze in shock
+
+A tall man stands at the door. Morning mist rises from his long black beard and two sinister eyes stare across at you. Several blades, knives and pistols hang over his long black coat. A shiver runs down your spine.
+
+‘Ye must be that ghost that scared my crew!’
+
+He grabs you by the collar and stares into your eyes. ‘They call you He-Who-Knows. They think ye’re wiser than their captain. Wiser than me!’ he growls. ‘Did ye really think ye could wander me ship, mock me crew and just leave?’
+
+He drags you out of the cabin and tosses you down onto the deck.
+
+‘Comrades! Come ‘ere and take a look at yer so-called ghost! He who ye think is smarter than yer captain! I shall prove ye wrong!’
+
+The grim-looking pirates move closer and glare at you with their hollow eyes. The captain raises his arm and reveals a scroll.
+
+‘This ancient scroll contains the secret ta a great prey! Only I can read it and know where it’s hidden.’
+
+He points his finger at you.
+
+‘He will now read the document and tell me the coordinates of the prey… if he’s smart enough!’
+
+The pirates cheer for their captain. He hands you the scroll.
+
+’Try ye best,’
+
+he says with a scornful laugh.
+
+TASK
+
+Find the coordinates on the captains scroll.
+
+1: scroll dataset
+
+use following format: XX.XX.XX.XN XX.XX.XX.XW
+
+--------------------------------------------
+
+‘How dare ye mock me in front of me whole crew!’ he shouts. ‘I shall cut ye ta pieces!’
+
+He draws his blade and comes right at you. You manage to jump aside. He nearly got you! You look around, panicking. Pirates everywhere! There’s nowhere to go. You look out to sea. In the distance, you can make out a city skyline.
+
+‘That must be Nassau! It’s the only way,’
+
+you think, as the pirates draw closer, ready to slice you into pieces. You take a deep breath, reach for the railing and jump overboard.
+
+‘Aargh!’ you hear the captain shout. ‘We’ll meet again, I promise!’
+
+You hit the floor hard, crying out in pain. Bright light hurts your eyes, and you can hear faint voices.
+
+‘Michael? Michael, are you ok? God, I hope he didn’t hurt himself. How’s the simulation going?’ ‘Seems to still be running, but we’ve lost the connection to the glasses.’
+
+You blink and slowly open your eyes. You’re lying on the floor of a big room with white walls. You lift your head and notice shattered pieces next to your head. ‘Are those glasses?’ you think.
+
+‘Ah, Michael you’re unharmed, good.’
+
+You sit up and turn your head towards the voice. You recognise your boss behind a glass pane.
+
+‘What the… ?’ you think. ‘How… ?’ you say, looking at your boss confused. ‘Michael we’re sorry, but we had to ensure the tests were unbiased,’ he tells you.
+
+‘What?’ you ask.
+
+‘Oh, you don’t seem to remember. Let me explain: on Sunday, 28 November, we called you under the guise that there were problems with aBBi. We then put you in our ultra-realistic virtual simulator, which creates an alternative reality adventure. Your task was to test the limits of this new product. But first let me get you out of this room and we can discuss the rest over coffee.’
+
+You slowly stand up and make your way to the door. You put your hand on the reader… but it doesn’t work.
+
+Sir? Sir, we have a problem,’ you hear your colleague say to your boss. ‘What is it?’ he answers. ‘It seems I have lost control over aBBi. She’s not responding to my commands. She seems to have locked the doors and taken control over the simulation.’
+
+‘How is that possible? Michael, stay where you are, we’re getting you out of there!’
+
+Your boss’s voice breaks up and another voice takes over.
+
+‘MUAHAHAAHAHAHAH! I told ye we’d meet again! Did ye think the great Blackbeard would be defeated so easily? I control this game, AHAHAHA!’
+
+His laughter echoes off the walls. ‘Ta escape, ye need ta pass through all doors. How ye gonna get out of this one, landlubber? AHAHAHAH!’
+
+His lingering laughter leaves you with an uneasy feeling.
+
+A panel next to the door opens, revealing a pair of VR-glasses. Sighing you put them back on and find yourself in the dark hull of Blackbeard’s ship. A Hatch in a door opens and a guard looks at you.
+
+‘He got ye, boy. There’s no escape from the captain’. He closes the hatch and you’re on your own, surrounded by... gold coins? ‘Hey, guard!’ you shout, ‘how about you open this door and I give you a gold coin?’
+
+The door opens and the guard takes your coin.
+
+‘How many doors until I can finally leave this ship?’
+
+‘We are ten guards, and we’ll let ye pass exactly once for one coin. Ye are not allowed ta take more than 4 coins with ye, but me and me mates will store as many coins as you want for ye.’
+
+TASK
+
+How many gold coins must at least be in the vault of Blackbeard's ship, so that all ten guards can be bribed and you can break out?
+
+

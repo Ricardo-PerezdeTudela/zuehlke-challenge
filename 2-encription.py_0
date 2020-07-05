@@ -1,0 +1,148 @@
+# Use the Kasiski method to break a message cyphered using the Vigenère cypher. 
+
+from os import path
+import wget
+import re
+import numpy as np
+import string
+
+
+filename = "crypto.204cfa7f.txt"
+if not path.exists(filename):
+    url = "https://challenge.zuehlke.com/static/media/" + filename
+    filename = wget.download(url)
+
+f = open(filename, "r")
+text = f.read()
+
+# Before decyphering the text, we make a copy:
+list_dtext = [text[i] for i in range(0, len(text))]
+
+# The alphabet in a list:
+list_letters = list(string.ascii_uppercase)
+
+dict0 = {}
+for n in range(2, 20):
+    for offset in range(0,n):
+        texti = text[offset : offset + n * int(len(text) / n)]
+        list_substrings = [texti[i:i+n] for i in range(0, len(texti), n)]
+        for substring in list_substrings:
+            if (len(substring) > 2):
+                number_of_occurrences = text.count(substring)
+                if number_of_occurrences > 1:
+                    list_ocurrences = [m.start() for m in re.finditer(substring, text)]
+                    #print(substring, list_ocurrences)
+                    dict0[substring] = list_ocurrences
+
+# Remove duplicates:
+dict = {}
+for key,value in dict0.items():
+    if key not in dict.keys():
+        dict[key] = value
+
+# Print dictionary:
+#for key in dict:
+#    print(key, ' : ', dict[key])
+
+def multiples (n):
+    # Compute the multiples of an integer number
+    lista = []
+    for i in range(1,n+1):
+        if n%i == 0:
+            lista.append(i)
+    return lista
+
+# A ditionary is created in which all the multiples 
+# are assigned to each key
+dict2 = {}
+for key,value in dict.items():
+    list_multiples = []
+    for i in value:
+        for j in value:
+            diff = j-i
+            if diff > 0:
+                list_multiples.append(multiples(diff))
+    ll = [item for sublist in list_multiples for item in sublist]
+
+    dict2[key] = list(set(ll))
+
+
+
+# Print dictionary:
+#for key in dict2:
+#    print(key, ' : ', dict2[key])
+
+def shift_letter (letter, shift):
+    global list_letters
+    index = list_letters.index(letter)
+    newindex = (index + shift) % (len(list_letters))
+    return list_letters[newindex]
+
+def intersection(lst1, lst2): 
+    lst3 = [value for value in lst1 if value in lst2] 
+    return lst3
+
+# A list of the common multiples for substrings longer than 4 characters:
+list0 = range(0,100)
+for key,value in dict2.items():
+    if len(key) > 4:
+        list0 = intersection (list0,value)
+
+# The key can be of length 1, 2, 3, 4, 6 or 12.
+#print(list0)
+length_key = 12
+
+# Assuming a length of 12, we'll perform a frequency analysis
+# of the letters at a distance of 12 apart. 
+# These letters should 
+
+for n in range(0, length_key):
+#for n in range(0, 1):
+    x = [text[i+n] for i in range(0, len(text)-n, length_key)]
+    labels, counts = np.unique(x,return_counts=True)
+
+    index_max = np.where(counts == np.amax(counts))[0][0]
+
+    #print(len(index_max))   
+
+    #index_max = index_max[0]
+    letter_max = labels[index_max]
+
+    #print(index_max, letter_max)
+
+
+    # The most frequent letter in English should be 'E', 
+    # therefore we will perform a shift on the subgroup of letters:
+    index_E = list_letters.index('E')
+    index_letter_max = list_letters.index(letter_max)
+    shift = (index_E - index_letter_max)
+
+
+
+    # All the letters in the substring are shifted in the copy:
+    for i in range(0, len(text)-n, length_key):
+        list_dtext[i] = shift_letter (text[i], shift)
+
+
+dtext = "".join(list_dtext)
+
+print(dtext)
+
+#print(letter_max,shift)
+#print(shift_letter(letter_max,shift))
+#print(list_letters)
+
+
+#print(letter_max)
+#import matplotlib.pyplot as plt 
+#ticks = range(len(counts))
+#plt.bar(ticks,counts, align='center')
+#plt.xticks(ticks, labels)
+#plt.show()
+
+
+
+
+
+
+
